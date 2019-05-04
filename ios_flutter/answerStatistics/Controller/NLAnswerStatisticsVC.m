@@ -10,7 +10,9 @@
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 @interface NLAnswerStatisticsVC ()
-
+{
+    FlutterViewController *flutterViewController;
+}
 @end
 
 @implementation NLAnswerStatisticsVC
@@ -19,7 +21,7 @@
     
     [super viewDidLoad];
     
-    FlutterViewController *flutterViewController = [[FlutterViewController alloc]init];
+    flutterViewController = [[FlutterViewController alloc]init];
     [GeneratedPluginRegistrant registerWithRegistry:[flutterViewController pluginRegistry]];
     [flutterViewController setInitialRoute:@"answerStatistics"];
     

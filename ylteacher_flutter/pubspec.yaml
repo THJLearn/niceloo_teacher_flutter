@@ -42,6 +42,12 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - images/statistics/icon_statistics_mark.png
+    - images/statistics/icon_statistics_number.png
+    - images/statistics/icon_statistics_sort.png
+
+
 
   # To add Flutter specific assets to your application, add an assets section, 
   # like this:
