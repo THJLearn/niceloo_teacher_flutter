@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ylteacher_flutter/page/answerStatistics/AnswerStatisticsPage1.dart';
+import 'package:ylteacher_flutter/page/answerStatistics/AnswerStatisticsPage.dart';
 
 void main() => runApp(MyApp());
 

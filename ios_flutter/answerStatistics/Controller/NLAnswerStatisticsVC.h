@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NLAnswerStatisticsVC : STController
-
 @end
 
 NS_ASSUME_NONNULL_END

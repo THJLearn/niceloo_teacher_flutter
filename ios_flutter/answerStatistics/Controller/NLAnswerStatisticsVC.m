@@ -9,6 +9,8 @@
 #import "NLAnswerStatisticsVC.h"
 #import <Flutter/Flutter.h>
 #import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
+#import "NLFlutterMethodChannel.h"
+#define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 @interface NLAnswerStatisticsVC ()
 {
     FlutterViewController *flutterViewController;
@@ -24,11 +26,21 @@
     flutterViewController = [[FlutterViewController alloc]init];
     [GeneratedPluginRegistrant registerWithRegistry:[flutterViewController pluginRegistry]];
     [flutterViewController setInitialRoute:@"answerStatistics"];
-    
+    NLFlutterMethodChannel *methodChannel = [[NLFlutterMethodChannel alloc]init];
+    [methodChannel setchannelNameAESWith:flutterViewController];
+    [methodChannel setchannelNameEventWith:flutterViewController andVC:self];
+
     [self addChildViewController:flutterViewController];
     [flutterViewController didMoveToParentViewController:self];
     flutterViewController.view.frame = self.view.bounds;
     [self.view addSubview: flutterViewController.view];
+    [self showloadingView];
+    
+    
+    
+    
+    
+    
     
     // Do any additional setup after loading the view.
 }

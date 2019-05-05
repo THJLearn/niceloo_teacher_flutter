@@ -11,7 +11,7 @@ class Api {
 
   Dio _dio = new Dio(); // 使用默认配置
 
-  static const platformMethodChannel = const MethodChannel('com.youlueducation/aes');
+  static const platformMethodChannel = const MethodChannel('com.niceloo_teacher_flutter/aes');
 
   netFetch(url, params, Options option, {isEncrypt:true,onTip:false}) async {
 

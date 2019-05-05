@@ -46,6 +46,7 @@ flutter:
     - images/statistics/icon_statistics_mark.png
     - images/statistics/icon_statistics_number.png
     - images/statistics/icon_statistics_sort.png
+    - images/base_back.png
 
 
 
@@ -90,4 +91,4 @@ flutter:
   # identifiers, which may be completely independent or the same as these.
   module:
     androidPackage: com.example.ylteacher_flutter
-    iosBundleIdentifier: com.example.ylteacherFlutter
+    iosBundleIdentifier: com.niceloo.NiceLooTeacher

@@ -1,7 +1,5 @@
 import 'package:dio/dio.dart';
 import 'Api.dart';
-import 'DataResult.dart';
-
 class HttpReuest{
 
   static Future postRequest(String url,  params, {isEncrypt:true}) async {
